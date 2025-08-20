@@ -1,2 +1,2 @@
-# DEMO1_FRACTAL
-Demo 1 Pythagoras Tree fractal code
+# LAB1_COMP3710
+DEMO1 fractals submission
