@@ -1,3 +1,6 @@
+
+# PROMT: "Generate a Python script to plot a 2D Gaussian function using Numpy and Matplotlib"
+
 import numpy as np
 import matplotlib.pyplot as plt
 

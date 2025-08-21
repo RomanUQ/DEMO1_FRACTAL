@@ -11,12 +11,17 @@ X, Y = np.mgrid[-4.0:4:0.01, -4.0:4:0.01]
 x = torch.Tensor(X)
 y = torch.Tensor(Y)
 
+# sin
+s = torch.sin(x + y)
+
 # transfer to the GPU device
 x = x.to(device)
 y = y.to(device)
 
 # Compute Gaussian
-z = torch.exp(-(x**2+y**2)/2.0)
+z = torch.exp(-(x**2+y**2)/2.0)       ## * s for Gabor filter
+
+
 
 #plot
 import matplotlib.pyplot as plt

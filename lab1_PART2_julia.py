@@ -7,8 +7,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # Use NumPy to create a 2D array of complex numbers on [-2,2]x[-2,2]
 Y, X = np.mgrid[-1.3:1.3:0.005, -2:1:0.005]
 
-# INCREASE THE RESOLUTION + ZOOM IN for demo
-# Y, X = np.mgrid[-0.1:0.1:0.001, -0.85:-0.65:0.001]
+# Y, X = np.mgrid[0.1218:0.1418:0.00002, -0.7536:-0.7336:0.00002]
 
 
 # load into PyTorch tensors

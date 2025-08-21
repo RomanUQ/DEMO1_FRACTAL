@@ -13,13 +13,10 @@ X_np = X.numpy()
 Y_np = Y.numpy()
 Z_np = Z.numpy()
 
-# Plot the sine stripes
+
+
+# Plot sine stripes
 plt.figure(figsize=(8, 6))
 contour = plt.contourf(X_np, Y_np, Z_np, levels=100, cmap='plasma')
 plt.colorbar(contour)
-plt.title('2D sin function and stripes')
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.axis('equal')
-plt.grid(True)
 plt.show()

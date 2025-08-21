@@ -29,7 +29,7 @@ def pythag_tree(depth=20, angle_step=np.pi/4, baseLen=0.25):
         new_theta = torch.cat([theta + angle_step, theta - angle_step])
 
         # both children shrink by sqrt(2)/2
-        new_L = torch.cat([L, L]) * (np.sqrt(2) / 2)
+        new_L = torch.cat([L, L]) * (np.sqrt(2)/2)
 
         # both children start at parents end (x2, y2)
         new_x = torch.cat([x2, x2])
@@ -49,6 +49,8 @@ segs = pythag_tree(depth=15)
 ax = plt.gca()
 ax.add_collection(LineCollection(segs)) # add every line segment at once
 ax.set_aspect('equal')
+#ax.set_xlim(0.45, 0.55)
+#ax.set_ylim(0.70, 1.10)
 plt.axis('off')
 plt.show()
 
